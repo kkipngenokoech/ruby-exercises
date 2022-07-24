@@ -5,12 +5,12 @@ end
 
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
-  "Hello ".concat(string)
+  "Hello ".concat(string)<<"!"
 end
 
 def substrings(word)
   # return the first 4 letters from the word using substrings
-  word.index[0,4]
+  word[0..3]
 end
 
 def capitalize(word)
@@ -45,5 +45,5 @@ end
 
 def space_remover(string)
   # remove all the spaces in the string using gsub
-  string.strip
+  string.delete(" ")
 end
